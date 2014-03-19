@@ -684,4 +684,57 @@ small{
 
 /************ GRAPH ************/
 
+/************ TARGET ************/
+
+.target_london, 
+.target_ny{
+	position: absolute;
+	top: 0;
+	left:0;
+	cursor: pointer;
+}
+
+.target_london{
+	top: 600px;
+	left: 270px;
+}
+
+.target_ny{
+	top: 440px;
+	left: 910px;
+}
+
+.targetlondon p,
+.targetny p{
+	position: absolute;
+}
+
+#on_london{
+	left: 320px;
+	top: 540px;
+	width: 80px;
+	padding: 10px 20px;
+	background: rgba(0,0,0,.5);
+	color: white;
+	display: none;
+}
+
+#on_ny{
+	left: 840px;
+	top: 340px;
+	width: 150px;
+	padding: 10px 20px;
+	background: rgba(0,0,0,.5);
+	color: white;
+	display: none;
+}
+
+.targetlondon .active_target{
+	display: block;
+}
+
+
+
+/************ TARGET ************/
+
 

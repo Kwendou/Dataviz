@@ -58,6 +58,10 @@ $('#full_x5F_ny').mouseout(function(){
 	$('.element_6').removeClass("active");
  });
 
+$('.target_london').mouseover(function(){
+  $('#on_london').addClass(".active_target");
+ });
+
 var hl = hnyc = 0; 
 function augmenterheurelondon(){ 
    document.getElementById('hlondon').innerHTML =hl.toFixed(1)+" H"; 		   
