@@ -124,7 +124,9 @@ header .col_left img{
 .content_4,
 .content_5,
 .content_6,
-.content_7{
+.content_7,
+.content_8,
+.content_9{
 	width: 100%;
 	position: relative;
 }
@@ -189,9 +191,15 @@ small{
 .content_4,
 .content_5,
 .content_6,
-.content_7{
+.content_7,
+.content_8{
 	border-bottom: 1px solid black;
 	padding-bottom: 48px;
+	position: relative;
+}
+
+.content_9{
+	border-bottom: 1px solid black;
 	position: relative;
 }
 
@@ -384,6 +392,47 @@ small{
 	-webkit-animation-fill-mode: both;
 }
 
+ #gauge_nyc, #gauge_london {
+ 	width: 200px;
+ 	height: 200px;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	fill:yellow;
+ }
+
+ #gaz{
+ 	width: 400px;
+ 	margin: 32px auto;
+ 	margin-left: 330px;
+ }
+
+ #gauge_nyc {
+ 	top: 140px;
+ 	left: 120px;
+ }
+
+ #gauge_london {
+ 	top: 140px;
+ 	left: 720px;
+ }
+
+h4{
+	font-size: 28px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ess_londre{
+	top: 160px;
+	left: 770px;
+}
+
+.ess_ny{
+	top: 160px;
+	left: 140px;
+}
 
 /************ CONTENT ************/
 
@@ -766,9 +815,6 @@ small{
 	-webkit-animation-duration:.3s;
 	-webkit-animation-fill-mode: both;
 }
-
-
-
 
 /************ TARGET ************/
 
