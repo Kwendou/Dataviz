@@ -165,7 +165,8 @@ small{
 	background: black;
 }
 
-.number_cab{
+.number_cab_ny, 
+.number_cab_uk{
 	font-weight: bold;
 	font-size: 72px;
 	text-align: center;

@@ -209,6 +209,29 @@ function augmentereq(){
 var eqstop = setTimeout("augmentereq()", 1);
 
 
+var tnyc = tuk = 0; 
+      function augmentertnyc(){ 
+         document.getElementById('number_cab_ny').innerHTML =tnyc.toFixed(3);        
+         if(tnyc < 12.999){ 
+            tnyc += 0.013;  
+
+            tnycstop = setTimeout("augmentertnyc()", 1); 
+         } 
+      } 
+      var tnycstop = setTimeout("augmentertnyc()", 1);
+
+
+      function augmentertuk(){ 
+         document.getElementById('number_cab_uk').innerHTML =tuk.toFixed(3);       
+         if(tuk < 22.999){ 
+            tuk += 0.023;   
+
+            tukstop = setTimeout("augmentertuk()", 1); 
+         } 
+      } 
+      var tukstop = setTimeout("augmentertuk()", 1);
+
+
 $('.content_8').waypoint({
   handler: function(direction) {
     augmenterheurelondon();
