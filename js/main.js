@@ -304,7 +304,7 @@ var g = new JustGage({
 
   $('.content_9').waypoint({
   handler: function(direction) {
-    g;
+    
   },
   offset: '50%'
 });
