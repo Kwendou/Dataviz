@@ -49,7 +49,7 @@ main{
 }
 
 .sp_6{
-	height: 340px;
+	height: 400px;
 	left: 50%;
 	top:102px;
 }
@@ -817,5 +817,48 @@ h4{
 }
 
 /************ TARGET ************/
+
+/************ AGE CONDUCTEUR ************/
+
+.age_nyc, .age_uk {
+    width: 512px; 
+    height: 500px; 
+    margin-left: -206px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.augmentenyc{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 0px;
+    z-index: 1;
+}
+
+.agenyc{
+    position: absolute;
+    top:80px;
+    left: 350px;
+    height: 320px;
+    z-index: 2
+}            
+
+.augmenteuk{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 2px;
+    z-index: 1;
+}
+
+.ageuk{
+    position: absolute;
+    top:80px;
+    left: 350px;
+    height: 320px;
+    z-index: 2;
+}
+
+/************ AGE CONDUCTEUR ************/
 
 

@@ -231,6 +231,28 @@ var tnyc = tuk = 0;
       } 
       //var tukstop = setTimeout("augmentertuk()", 1);
 
+      //age des conucteurs
+
+      var i = 0;
+      setInterval(function()
+      {
+            if($("#agenyc").attr("y")- i>54)
+            {
+                $("#agenyc").attr("y",$("#agenyc").attr("y")- i);
+                i+=0.1;
+            }
+      },33);
+
+      var e = 0;
+      setInterval(function()
+      {
+            if($("#ageuk").attr("y")- e>65)
+            {
+                $("#ageuk").attr("y",$("#ageuk").attr("y")- e);
+                e+=0.1;
+            }
+      },33);
+
 $('.content_1').waypoint({
   handler: function(direction) {
     augmentertuk();
