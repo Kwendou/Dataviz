@@ -717,6 +717,14 @@ small{
 	background: rgba(0,0,0,.5);
 	color: white;
 	display: none;
+
+	-webkit-animation-name: bounceIn;
+	-webkit-animation-delay: .2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-function: linear;
+	-webkit-animation-duration:.3s;
+	-webkit-animation-fill-mode: both;
+	
 }
 
 .on_ny{
@@ -727,6 +735,13 @@ small{
 	background: rgba(0,0,0,.5);
 	color: white;
 	display: none;
+
+	-webkit-animation-name: bounceIn;
+	-webkit-animation-delay: .2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-function: linear;
+	-webkit-animation-duration:.3s;
+	-webkit-animation-fill-mode: both;
 }
 
 .targetlondon .active_target{
