@@ -58,8 +58,20 @@ $('#full_x5F_ny').mouseout(function(){
 	$('.element_6').removeClass("active");
  });
 
-$('.target_london').mouseover(function(){
-  $('#on_london').addClass(".active_target");
+$('.targetlondon').mouseover(function(){
+  $('.on_london').addClass("active_target");
+ });
+
+$('.targetlondon').mouseout(function(){
+  $('.on_london').removeClass("active_target");
+ });
+
+$('.targetny').mouseover(function(){
+  $('.on_ny').addClass("active_target");
+ });
+
+$('.targetny').mouseout(function(){
+  $('.on_ny').removeClass("active_target");
  });
 
 var hl = hnyc = 0; 
