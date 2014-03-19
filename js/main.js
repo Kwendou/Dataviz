@@ -218,7 +218,7 @@ var tnyc = tuk = 0;
             tnycstop = setTimeout("augmentertnyc()", 1); 
          } 
       } 
-      var tnycstop = setTimeout("augmentertnyc()", 1);
+      //var tnycstop = setTimeout("augmentertnyc()", 1);
 
 
       function augmentertuk(){ 
@@ -229,8 +229,15 @@ var tnyc = tuk = 0;
             tukstop = setTimeout("augmentertuk()", 1); 
          } 
       } 
-      var tukstop = setTimeout("augmentertuk()", 1);
+      //var tukstop = setTimeout("augmentertuk()", 1);
 
+$('.content_1').waypoint({
+  handler: function(direction) {
+    augmentertuk();
+    augmentertnyc();
+  },
+  offset: '50%'
+});
 
 $('.content_8').waypoint({
   handler: function(direction) {
@@ -260,3 +267,6 @@ $('.content_6').waypoint({
   },
   offset: '50%'
 });
+
+
+
