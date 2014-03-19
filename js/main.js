@@ -213,7 +213,7 @@ var tnyc = tuk = 0;
       function augmentertnyc(){ 
          document.getElementById('number_cab_ny').innerHTML =tnyc.toFixed(3);        
          if(tnyc < 12.999){ 
-            tnyc += 0.013;  
+            tnyc += 0.026;  
 
             tnycstop = setTimeout("augmentertnyc()", 1); 
          } 
@@ -224,7 +224,7 @@ var tnyc = tuk = 0;
       function augmentertuk(){ 
          document.getElementById('number_cab_uk').innerHTML =tuk.toFixed(3);       
          if(tuk < 22.999){ 
-            tuk += 0.023;   
+            tuk += 0.046;   
 
             tukstop = setTimeout("augmentertuk()", 1); 
          } 
