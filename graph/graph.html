@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>graph</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="author" href="humans.txt">
+        <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+
+    </head>
+	<body>	
+	<div id="nation">
+		<div class="graphnyc" id="equateur">0</div>
+		<div class="graphnyc" id="repdom">0</div>
+		<div class="graphnyc" id="chine">0</div>
+		<div class="graphnyc" id="egypte">0</div>
+		<div class="graphnyc" id="usa">0</div>
+		<div class="graphnyc" id="haiti">0</div>
+		<div class="graphnyc" id="inde">0</div>
+		<div class="graphnyc" id="pakistan">0</div>
+		<div class="graphnyc" id="bangladesh">0</div>
+	
+		<div class="graphl" id="london">0</div>
+		<div class="graphl" id="autre">0</div>
+	</div>
+
+	<div id="travail">
+		<div class="heurel" id="hlondon">0</div>
+		<div class="heurenyc" id="hnyc">0</div>
+	</div>
+
+	    <script type="text/javascript">
+
+	        var hl = hnyc = 0; 
+			function augmenterheurelondon(){ 
+			   document.getElementById('hlondon').innerHTML =hl.toFixed(1)+" H"; 		   
+			   if(hl < 8.3){ 
+			   		hl += 0.1; 	
+
+			   		hlstop = setTimeout("augmenterheurelondon()", 20); 
+			   } 
+			} 
+			var hlstop = setTimeout("augmenterheurelondon()", 1);
+
+			function augmenterheurenyc(){ 
+			   document.getElementById('hnyc').innerHTML =hnyc.toFixed(1)+" H"; 		   
+			   if(hnyc < 9.4){ 
+			   		hnyc += 0.1; 	
+
+			   		hnycstop = setTimeout("augmenterheurenyc()", 18); 
+			   } 
+			} 
+			var hnycstop = setTimeout("augmenterheurenyc()", 1);
+
+	    
+	        var l = other = 0; 
+			function augmenterlondon(){ 
+			   l += 1; 
+			   document.getElementById('london').innerHTML =l+"%"; 		   
+			   lstop = setTimeout("augmenterlondon()", 16); 
+			   if(l >= 99){ 
+			      window.clearTimeout(lstop); 
+			   } 
+			} 
+			var lstop = setTimeout("augmenterlondon()", 1);
+
+			function augmenterother(){ 
+			   other += 1; 
+			   document.getElementById('autre').innerHTML =other+"%"; 		   
+			   otherstop = setTimeout("augmenterother()", 1000); 
+			   if(other >= 1){ 
+			      window.clearTimeout(otherstop); 
+			   } 
+			} 
+			var otherstop = setTimeout("augmenterother()", 1);
+
+	        var bg = paki = ind = ha = us = eg = ch = rd = eq = 0; 
+			function augmenterbg(){ 
+			   bg += 1; 
+			   document.getElementById('bangladesh').innerHTML =bg+",1%"; 		   
+			   bgstop = setTimeout("augmenterbg()", 80); 
+			   if(bg >= 23){ 
+			      window.clearTimeout(bgstop); 
+			   } 
+			} 
+			var bgstop = setTimeout("augmenterbg()", 1);
+
+			function augmenterpaki(){ 
+			   paki += 1; 
+			   document.getElementById('pakistan').innerHTML =paki+",2%"; 		   
+			   pakistop = setTimeout("augmenterpaki()", 160); 
+			   if(paki >= 13){ 
+			      window.clearTimeout(pakistop); 
+			   } 
+			} 
+			var pakistop = setTimeout("augmenterpaki()", 1);
+
+			function augmenterind(){ 
+			   ind += 1; 
+			   document.getElementById('inde').innerHTML =ind+",3%"; 		   
+			   indstop = setTimeout("augmenterind()", 180); 
+			   if(ind >= 9){ 
+			      window.clearTimeout(indstop); 
+			   } 
+			} 
+			var pakistop = setTimeout("augmenterind()", 1);
+
+			function augmenterha(){ 
+			   ha += 1; 
+			   document.getElementById('haiti').innerHTML =ha+",5%"; 		   
+			   hastop = setTimeout("augmenterha()", 200); 
+			   if(ha >= 6){ 
+			      window.clearTimeout(hastop); 
+			   } 
+			} 
+			var hastop = setTimeout("augmenterha()", 1);
+
+			function augmenterus(){ 
+			   us += 1; 
+			   document.getElementById('usa').innerHTML =us+",9%"; 		   
+			   usstop = setTimeout("augmenterus()", 200); 
+			   if(us >= 5){ 
+			      window.clearTimeout(usstop); 
+			   } 
+			} 
+			var usstop = setTimeout("augmenterus()", 1);
+
+			function augmentereg(){ 
+			   eg += 1; 
+			   document.getElementById('egypte').innerHTML =eg+",4%"; 		   
+			   egstop = setTimeout("augmentereg()", 250); 
+			   if(eg >= 4){ 
+			      window.clearTimeout(egstop); 
+			   } 
+			} 
+			var egstop = setTimeout("augmentereg()", 1);
+
+			function augmenterch(){ 
+			   ch += 1; 
+			   document.getElementById('chine').innerHTML =ch+",9%"; 		   
+			   chstop = setTimeout("augmenterch()", 1000); 
+			   if(ch >= 1){ 
+			      window.clearTimeout(chstop); 
+			   } 
+			} 
+			var chstop = setTimeout("augmenterch()", 1);
+
+			function augmenterrd(){ 
+			   rd += 1; 
+			   document.getElementById('repdom').innerHTML =rd+",3%"; 		   
+			   rdstop = setTimeout("augmenterrd()", 1050); 
+			   if(rd >= 1){ 
+			      window.clearTimeout(rdstop); 
+			   } 
+			} 
+			var rdstop = setTimeout("augmenterrd()", 1);
+
+			function augmentereq(){ 
+			   eq += 1; 
+			   document.getElementById('equateur').innerHTML =eq+"%"; 		   
+			   eqstop = setTimeout("augmentereq()", 1050); 
+			   if(eq >= 1){ 
+			      window.clearTimeout(eqstop); 
+			   } 
+			} 
+			var eqstop = setTimeout("augmentereq()", 1);
+
+	    </script>
+	</body>
+</html>
