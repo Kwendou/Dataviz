@@ -112,7 +112,7 @@ header h1{
 }
 
 .border_header{
-	width: 1024px;
+	width: 1023px;
 	height: 32px;
 	background: url(../img/border_header.png);
 }

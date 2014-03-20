@@ -285,7 +285,7 @@ $('.content_7').waypoint({
 
       function augmenterprixmuk(){ 
          document.getElementById('pmuk').innerHTML =" = £ "+pmuk.toFixed(0);            
-         if(pmuk < 12){ 
+         if(pmuk < 13){ 
               pmuk += 1;    
 
               pmukstop = setTimeout("augmenterprixmuk()", 100); 
