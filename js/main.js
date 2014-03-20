@@ -339,49 +339,49 @@ $('.making_content_1').waypoint({
   handler: function(direction) {
     $(this).addClass("active_making");
   },
-  offset: '50%'
+  offset: 600
 });
 
 $('.making_content_2').waypoint({
   handler: function(direction) {
     $(this).addClass("active_making");
   },
-  offset: '50%'
+  offset: 600
 });
 
 $('.making_content_3').waypoint({
   handler: function(direction) {
     $(this).addClass("active_making");
   },
-  offset: '50%'
+ offset: 600
 });
 
 $('.making_content_4').waypoint({
   handler: function(direction) {
     $(this).addClass("active_making");
   },
-  offset: '50%'
+  offset: 600
 });
 
 $('.making_content_5').waypoint({
   handler: function(direction) {
     $(this).addClass("active_making");
   },
-  offset: '50%'
+  offset: 600
 });
 
 $('.making_content_6').waypoint({
   handler: function(direction) {
     $(this).addClass("active_making");
   },
-  offset: '50%'
+  offset: 600
 });
 
 $('.making_content_7').waypoint({
   handler: function(direction) {
     $(this).addClass("active_making");
   },
-  offset: '50%'
+  offset: 600
 });
 
 $('.content_6').waypoint({
