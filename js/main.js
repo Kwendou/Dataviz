@@ -270,6 +270,53 @@ $('.content_7').waypoint({
 });
       
 
+
+      var pmnyc = pmuk = 0; 
+      function augmenterprixmnyc(){ 
+         document.getElementById('pmnyc').innerHTML =" = "+pmnyc.toFixed(2)+" $";          
+         if(pmnyc < 4.60){ 
+              pmnyc += 0.12;  
+
+              pmnycstop = setTimeout("augmenterprixmnyc()", 40); 
+         } 
+      } 
+      var pmnycstop = setTimeout("augmenterprixmnyc()", 1);
+
+
+      function augmenterprixmuk(){ 
+         document.getElementById('pmuk').innerHTML =" = £ "+pmuk.toFixed(0);            
+         if(pmuk < 12){ 
+              pmuk += 1;    
+
+              pmukstop = setTimeout("augmenterprixmuk()", 100); 
+         } 
+      } 
+      var pmukstop = setTimeout("augmenterprixmuk()", 1);
+
+
+  /*prix moyen en euro*/
+      var pmnyce = pmuke = 0; 
+      function augmenterprixmnyce(){ 
+         document.getElementById('pmnyce').innerHTML =" = "+pmnyce.toFixed(2)+" €";            
+         if(pmnyce < 3.29){ 
+              pmnyce += 0.05;     
+
+              pmnycestop = setTimeout("augmenterprixmnyce()", 24); 
+         } 
+      } 
+      var pmnycestop = setTimeout("augmenterprixmnyce()", 1);
+
+
+      function augmenterprixmuke(){ 
+         document.getElementById('pmuke').innerHTML =" = "+pmuke.toFixed(2)+" €";          
+         if(pmuke < 15.59 ){ 
+              pmuke += 0.08;  
+
+              pmukestop = setTimeout("augmenterprixmuke()", 6); 
+         } 
+      } 
+      var pmukestop = setTimeout("augmenterprixmuke()", 1);
+
 $('.content_1').waypoint({
   handler: function(direction) {
     augmentertuk();
