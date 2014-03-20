@@ -861,4 +861,60 @@ h4{
 
 /************ AGE CONDUCTEUR ************/
 
+/************ FOOTER ************/
+
+footer{
+	width: 100%;
+	background: black;
+	position: relative;
+	bottom: 0;
+	margin-top: 48px;
+	padding: 16px 0;
+	opacity: .5;
+
+	-webkit-transition: all .2s ease-out;
+}
+
+footer:hover{
+	opacity: 1;
+}
+
+.dwm_logo{
+	width: 48px;
+	position: absolute;
+	left: 24px;
+	top: 24px;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	font-weight: lighter;
+	line-height: 1.4;
+}
+
+.top{
+	position: absolute;
+	right: 0;
+	font-size: 14px;
+	top: 0;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	display: block;
+	width: 120px;
+	padding: 23px 0;
+	text-align: center;
+	background: #191919;
+
+	-webkit-transition: all .2s ease-out;
+}
+
+.top:hover{
+	background: #e3d212;
+}
+
+/************ FOOTER ************/
+
 
