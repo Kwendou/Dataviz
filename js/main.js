@@ -289,22 +289,29 @@ $('.content_6').waypoint({
   offset: '50%'
 });
 
-var g = new JustGage({
-    id: "gauge_london", 
-    value: 0.67, 
-    min: 0,
-    max: 5,
-  });
-  var g = new JustGage({
-    id: "gauge_nyc", 
-    value: 2.33, 
-    min: 0,
-    max: 5,
-  }); 
+
+var hopJauge = false;
 
   $('.content_9').waypoint({
   handler: function(direction) {
+    if ( !hopJauge ) {
+      var g = new JustGage({
+        id: "gauge_london", 
+        value: 0.67, 
+        min: 0,
+        max: 5,
+      });  
+      var g = new JustGage({
+        id: "gauge_nyc", 
+        value: 2.33, 
+        min: 0,
+        max: 5,
+      }); 
+      hopJauge = true;
+    }
     
+  
+
   },
   offset: '50%'
 });

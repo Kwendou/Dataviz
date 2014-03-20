@@ -869,7 +869,7 @@ footer{
 	position: relative;
 	bottom: 0;
 	margin-top: 48px;
-	padding: 16px 0;
+	padding: 12px 0;
 	opacity: .5;
 
 	-webkit-transition: all .2s ease-out;
@@ -883,7 +883,7 @@ footer:hover{
 	width: 48px;
 	position: absolute;
 	left: 24px;
-	top: 24px;
+	top: 16px;
 }
 
 footer p{
@@ -904,7 +904,7 @@ footer p{
 	text-transform: uppercase;
 	display: block;
 	width: 120px;
-	padding: 23px 0;
+	padding: 18px 0;
 	text-align: center;
 	background: #191919;
 
