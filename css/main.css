@@ -660,19 +660,6 @@ h4{
 
 /************ Prix Moyen ************/
 
-/************ CLEARFIX ************/
-
-.clearfix:after{
-	display: block;
-	content: "";
-	clear: both;
-}
-
-*::selection { 
-	background: #e3d212;
-	color: white;
-} 
-/************ CLEARFIX ************/
 
 /************ GRAPH ************/
 
@@ -1043,6 +1030,14 @@ footer li{
 	top: 3370px;
 }
 
+.layout_credit{
+	background: url(../img/header_layout.png);
+	width: 100%;
+	height: 500px;
+	opacity: .1;
+	position: absolute;
+	top: 1210px;
+}
 
 /************ CONCLUSION ************/
 
@@ -1059,161 +1054,102 @@ footer li{
 
 /************ CREDITS ************/
 
-.taxi,
-.nous,
-.sources {
-	border-bottom: 1px solid black;
-	padding-bottom: 48px;
-	position: relative; 
-	overflow: hidden;
-}
-
-.sources {
-	border-bottom: none;
-}
-
-.titre_credit h5 {
-	font-size: 70px;
-	text-align: center;
-	color: black;
-	text-transform: uppercase;
-	margin-top: 48px;
-	margin-bottom: 48px;
-
+.credit,
+.sources{
+	width: 100%;
 	position: relative;
-	z-index: 100;
+	border-bottom: 1px solid black;
 }
 
-.nous {
-	text-align: center;
+.credit .perso{
+	width: 100%;
 	margin-top: 48px;
 }
 
-.kk {
-	width: 200px;
+.credit .perso li{
+	width: 20%;
 	height: 200px;
-	margin-right: 60px;
-	border-radius: 100px;
-	display: inline-block;
-	background: url(../credits/kk2X2.jpg);
+	margin-left: 3%;
+	float: left;
+	border-radius: 50%;
+	border: 10px solid black;
 }
 
-.toine {
-	width: 200px;
-	height: 200px;
-	margin-right: 60px;
-	border-radius: 100px;
-	display: inline-block;
-	background: url(../credits/toine2X2.jpg);
+.kevin{
+	background: url(../img/kk2X2.jpg);
 }
 
-.arnaud {
-	width: 200px;
-	height: 200px;
-	margin-right: 60px;
-	border-radius: 100px;
-	display: inline-block;
-	background: url(../credits/arnaud2X2.jpg);
+.antoine{
+	background: url(../img/toine2X2.jpg);
 }
 
-.laura {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	display: inline-block;
-	background: url(../credits/laura2X2.jpg);
+.arnaud{
+	background: url(../img/arnaud2X2.jpg);
 }
 
-.kk_info {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	background: rgba(255,255,255,.5);
-	position: absolute;
-	opacity: 0;
-	-webkit-transition: all .5s linear;
-}
-.toine_info {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	background: rgba(255,255,255,.5);
-	position: absolute;
-	opacity: 0;
-	-webkit-transition: all .5s linear;
-}
-.arnaud_info {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	background: rgba(255,255,255,.5);
-	position: absolute;
-	opacity: 0;
-	-webkit-transition: all .5s linear;
-}
-.laura_info {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	background: rgba(255,255,255,.5);
-	position: absolute;
-	opacity: 0;
-	-webkit-transition: all .5s linear;
+.laura{
+	background: url(../img/laura2X2.jpg);
 }
 
-.laura_info:hover, 
-.kk_info:hover, 
-.toine_info:hover, 
-.arnaud_info:hover {
-	opacity: 1
+.credit .nom{
+	padding-bottom: 24px;
 }
 
-.kk_info p,
-.toine_info p,
-.arnaud_info p,
-.laura_info p {
-	margin-top: 50px;
+.credit .nom li{
+	width: 20%;
+	margin-left: 5%;
+	float: left;
+	border-radius: 50%;
+	border: none;
 }
 
-.kk_info p a,
-.toine_info p a,
-.arnaud_info p a,
-.laura_info p a {
-	cursor: pointer;
-	font-size: 16px;
-	color: black;
-	text-decoration: none;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 20px;
-	padding-right: 20px; 
-}
-
-.sources a, .sources p {
-	text-decoration: none;
-	color: black;
+.credit .nom li p{
+	text-transform: capitalize;
 	text-align: center;
+	padding-top: 48px;
 }
 
-
-.taxi_nyc_anim{
-	-webkit-animation: nyc_anim 3s forwards;
+.credit .nom a{
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	padding: 24px 0;
+	background: black;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 24px 0;
 }
 
-@-webkit-keyframes nyc_anim {
-	0%{-webkit-transform:translateX(-600px);}
-	100%{-webkit-transform:translateX(50px);}
+.credit .nom a:hover{
+	background: #e3d212;
+	color: black;
 }
 
-.taxi_uk_anim{
-	-webkit-animation: uk_anim 3s forwards;
+.sources{
+	padding-bottom: 24px;
 }
 
-@-webkit-keyframes uk_anim {
-	0%{-webkit-transform:translateX(1000px);}
-	100%{-webkit-transform:translateX(260px);}
+.sources .source li{
+	padding: 12px 0px;
 }
 
+.sources .source a{
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+}
+
+.sources .source a:hover{
+	color: #e3d212;
+	border-bottom: 1px dotted #e3d212;
+}
+
+.noun_project li{
+	padding:12px 0;
+}
 
 /************ CREDITS ************/
 
@@ -1300,7 +1236,6 @@ h6{
 }
 
 
-
 /************ MAKING OF ************/
 
 /************ TARGET ************/
@@ -1329,11 +1264,11 @@ h6{
 }
 
 .on_london{
-	left: 900px;
-	top: 670px;
+	left: 420px;
+	top: 640px;
 	width: 80px;
 	padding: 10px 20px;
-	background: rgba(0,0,0,.5);
+	background: black;
 	color: white;
 	display: none;
 
@@ -1351,8 +1286,8 @@ h6{
 	top: 590px;
 	width: 150px;
 	padding: 10px 20px;
-	background: black;
-	color: white;
+	background: #e3d212;
+	color: black;
 	display: none;
 
 	-webkit-animation-name: bounceIn;
@@ -1394,5 +1329,18 @@ h6{
 
 /************ TARGET ************/
 
+/************ CLEARFIX ************/
+
+.clearfix:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+*::selection { 
+	background: #e3d212;
+	color: white;
+} 
+/************ CLEARFIX ************/
 
 
