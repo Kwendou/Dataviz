@@ -911,89 +911,6 @@ h4{
 
 /************ GRAPH ************/
 
-/************ TARGET ************/
-
-.target_london, 
-.target_ny{
-	position: absolute;
-	top: 0;
-	left:0;
-	cursor: pointer;
-}
-
-.target_london{
-	left: 940px;
-	top: 750px;
-}
-
-.target_ny{
-	top: 590px;
-	left: 400px;
-}
-
-.targetlondon p,
-.targetny p{
-	position: absolute;
-}
-
-.on_london{
-	left: 900px;
-	top: 670px;
-	width: 80px;
-	padding: 10px 20px;
-	background: rgba(0,0,0,.5);
-	color: white;
-	display: none;
-
-	-webkit-animation-name: bounceIn;
-	-webkit-animation-delay: .2s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-function: linear;
-	-webkit-animation-duration:.3s;
-	-webkit-animation-fill-mode: both;
-	
-}
-
-.on_ny{
-	left: 320px;
-	top: 640px;
-	width: 150px;
-	padding: 10px 20px;
-	background: rgba(0,0,0,.5);
-	color: white;
-	display: none;
-
-	-webkit-animation-name: bounceIn;
-	-webkit-animation-delay: .2s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-function: linear;
-	-webkit-animation-duration:.3s;
-	-webkit-animation-fill-mode: both;
-}
-
-.targetlondon .active_target{
-	display: block;
-
-	-webkit-animation-name: bounceIn;
-	-webkit-animation-delay: .2s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-function: linear;
-	-webkit-animation-duration:.3s;
-	-webkit-animation-fill-mode: both;
-}
-
-.targetny .active_target{
-	display: block;
-
-	-webkit-animation-name: bounceIn;
-	-webkit-animation-delay: .2s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-function: linear;
-	-webkit-animation-duration:.3s;
-	-webkit-animation-fill-mode: both;
-}
-
-/************ TARGET ************/
 
 /************ AGE CONDUCTEUR ************/
 
@@ -1385,5 +1302,97 @@ h6{
 
 
 /************ MAKING OF ************/
+
+/************ TARGET ************/
+
+.target_london, 
+.target_ny{
+	position: absolute;
+	top: 0;
+	left:0;
+	cursor: pointer;
+}
+
+.target_london{
+	left: 450px;
+	top: 570px;
+}
+
+.target_ny{
+	top: 520px;
+	left: 225px;
+}
+
+.targetlondon p,
+.targetny p{
+	position: absolute;
+}
+
+.on_london{
+	left: 900px;
+	top: 670px;
+	width: 80px;
+	padding: 10px 20px;
+	background: rgba(0,0,0,.5);
+	color: white;
+	display: none;
+
+	-webkit-animation-name: bounceIn;
+	-webkit-animation-delay: .2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-function: linear;
+	-webkit-animation-duration:.3s;
+	-webkit-animation-fill-mode: both;
+	
+}
+
+.on_ny{
+	left: 160px;
+	top: 590px;
+	width: 150px;
+	padding: 10px 20px;
+	background: black;
+	color: white;
+	display: none;
+
+	-webkit-animation-name: bounceIn;
+	-webkit-animation-delay: .2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-function: linear;
+	-webkit-animation-duration:.3s;
+	-webkit-animation-fill-mode: both;
+}
+
+.targetlondon .active_target{
+	display: block;
+
+	-webkit-animation-name: bounceIn;
+	-webkit-animation-delay: .2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-function: linear;
+	-webkit-animation-duration:.3s;
+	-webkit-animation-fill-mode: both;
+}
+
+.targetny .active_target{
+	display: block;
+
+	-webkit-animation-name: bounceIn;
+	-webkit-animation-delay: .2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-function: linear;
+	-webkit-animation-duration:.3s;
+	-webkit-animation-fill-mode: both;
+}
+
+.map{
+	width: 100%;
+	background:url(../img/map.png);
+	height: 507px;
+	margin: 48px 0;
+}
+
+/************ TARGET ************/
+
 
 
