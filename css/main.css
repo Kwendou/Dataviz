@@ -113,11 +113,13 @@ header h1{
 }
 
 header .col_left img{
-	margin-top: 72px;
+	margin-top: 86px;
+	float: left;
 }
 
  header .col_right img{
- 	margin-top: 86px;
+ 	margin-top: 72px;
+ 	float: right;
  }
 
  header p{
@@ -781,13 +783,13 @@ h4{
 }
 
 .target_london{
-	top: 600px;
-	left: 270px;
+	left: 940px;
+	top: 680px;
 }
 
 .target_ny{
-	top: 440px;
-	left: 910px;
+	top: 520px;
+	left: 400px;
 }
 
 .targetlondon p,
@@ -796,8 +798,8 @@ h4{
 }
 
 .on_london{
-	left: 320px;
-	top: 540px;
+	left: 900px;
+	top: 600px;
 	width: 80px;
 	padding: 10px 20px;
 	background: rgba(0,0,0,.5);
@@ -814,8 +816,8 @@ h4{
 }
 
 .on_ny{
-	left: 840px;
-	top: 340px;
+	left: 320px;
+	top: 580px;
 	width: 150px;
 	padding: 10px 20px;
 	background: rgba(0,0,0,.5);
