@@ -10,6 +10,7 @@ main{
 	width: 1024px;
 	margin: 0 auto;
 	position:relative;
+	z-index: 40;
 }
 
 .separate{
@@ -58,6 +59,8 @@ main{
 
 header nav{
 	width: 100%;
+	position: relative;
+	z-index: 100;
 }
 
 header ul{
@@ -104,6 +107,9 @@ header h1{
 	margin-bottom: 24px;
 
 	text-shadow: 1px 2px 3px #666;
+
+	position: relative;
+	z-index: 100;
 }
 
 .border_header{
@@ -909,6 +915,7 @@ footer{
 	margin-top: 48px;
 	padding: 12px 0;
 	opacity: .5;
+	z-index: 40;
 
 	-webkit-transition: all .2s ease-out;
 }
@@ -954,5 +961,14 @@ footer p{
 }
 
 /************ FOOTER ************/
+
+.layout{
+	background: url(../img/header_layout.png);
+	width: 100%;
+	height: 500px;
+	opacity: .1;
+	position: absolute;
+	top: 5780px;
+}
 
 
