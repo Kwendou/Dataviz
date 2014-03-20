@@ -137,6 +137,7 @@ header .col_left img{
 
 /************ HEADER ************/
 
+
 /************ COLONNE ************/
 
 .col_left, 
@@ -1098,6 +1099,16 @@ footer li{
 	top: 6290px;
 }
 
+.layout_making{
+	background: url(../img/header_layout.png);
+	width: 100%;
+	height: 500px;
+	opacity: .1;
+	position: absolute;
+	top: 3540px;
+}
+
+
 /************ CONCLUSION ************/
 
 .conclusion p{
@@ -1110,4 +1121,89 @@ footer li{
 }
 
 /************ CONCLUSION ************/
+
+/************ MAKING OF ************/
+
+.contentmaking{
+	width: 100%;
+}
+
+h5{
+	width: 100%;
+	font-size: 72px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 48px 0;
+}
+
+
+h6{
+	width: 100%;
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 24px 0;
+}
+
+.boy h6, .girl h6{
+	width: 100%;
+	font-size: 36px;
+	text-transform: uppercase;
+	padding: 12px 0;
+	text-align: left;
+}
+
+.contentmaking img{
+	padding: 16px 0; 
+}
+
+.famille{
+	padding-bottom: 24px;
+	border-bottom: 1px solid black;
+}
+
+.boy, .girl{
+	width: 502px;
+}
+
+.boy{
+	float: left;
+}
+
+.girl{
+	float: right;
+}
+
+.making_content_1,
+.making_content_2,
+.making_content_3,
+.making_content_4,
+.making_content_5,
+.making_content_6,
+.making_content_7{
+	width: 100%;
+	opacity: 0;
+}
+
+.active_making{
+	opacity: 1;
+
+	-webkit-transition: all .5s ease-out;
+}
+
+.making_content_1,
+.making_content_3{
+	border-bottom: 1px solid black;
+}
+
+.contentmaking p{
+	font-weight: lighter;
+	font-size:24px;
+	padding-top: 32px;
+}
+
+
+
+/************ MAKING OF ************/
+
 
