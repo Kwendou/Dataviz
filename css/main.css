@@ -1111,3 +1111,165 @@ footer li{
 
 /************ CONCLUSION ************/
 
+
+
+/************ CREDITS ************/
+
+.taxi,
+.nous,
+.sources {
+	border-bottom: 1px solid black;
+	padding-bottom: 48px;
+	position: relative; 
+	overflow: hidden;
+}
+
+.sources {
+	border-bottom: none;
+}
+
+.titre_credit h5 {
+	font-size: 70px;
+	text-align: center;
+	color: black;
+	text-transform: uppercase;
+	margin-top: 48px;
+	margin-bottom: 48px;
+
+	position: relative;
+	z-index: 100;
+}
+
+.nous {
+	text-align: center;
+	margin-top: 48px;
+}
+
+.kk {
+	width: 200px;
+	height: 200px;
+	margin-right: 60px;
+	border-radius: 100px;
+	display: inline-block;
+	background: url(../credits/kk2X2.jpg);
+	cursor: pointer;
+}
+
+.toine {
+	width: 200px;
+	height: 200px;
+	margin-right: 60px;
+	border-radius: 100px;
+	display: inline-block;
+	background: url(../credits/toine2X2.jpg);
+	cursor: pointer;
+}
+
+.arnaud {
+	width: 200px;
+	height: 200px;
+	margin-right: 60px;
+	border-radius: 100px;
+	display: inline-block;
+	background: url(../credits/arnaud2X2.jpg);
+	cursor: pointer;
+}
+
+.laura {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	display: inline-block;
+	background: url(../credits/laura2X2.jpg);
+	cursor: pointer;
+}
+
+.kk_info {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: rgba(255,255,255,.5);
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: all .5s linear;
+}
+.toine_info {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: rgba(255,255,255,.5);
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: all .5s linear;
+}
+.arnaud_info {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: rgba(255,255,255,.5);
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: all .5s linear;
+}
+.laura_info {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: rgba(255,255,255,.5);
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: all .5s linear;
+}
+
+.laura_info:hover, 
+.kk_info:hover, 
+.toine_info:hover, 
+.arnaud_info:hover {
+	opacity: 1
+}
+
+.kk_info p,
+.toine_info p,
+.arnaud_info p,
+.laura_info p {
+	margin-top: 50px;
+}
+
+.kk_info p a,
+.toine_info p a,
+.arnaud_info p a,
+.laura_info p a {
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+}
+
+.sources a, .sources p {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+
+.taxi_nyc_anim{
+	-webkit-animation: nyc_anim 3s forwards;
+}
+
+@-webkit-keyframes nyc_anim {
+	0%{-webkit-transform:translateX(-600px);}
+	100%{-webkit-transform:translateX(50px);}
+}
+
+.taxi_uk_anim{
+	-webkit-animation: uk_anim 3s forwards;
+}
+
+@-webkit-keyframes uk_anim {
+	0%{-webkit-transform:translateX(1000px);}
+	100%{-webkit-transform:translateX(260px);}
+}
+
+
+/************ CREDITS ************/
+
+
