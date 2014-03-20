@@ -1053,8 +1053,20 @@ footer p{
 	line-height: 1.4;
 }
 
-.top{
+footer ul{
+	float: right;
 	position: absolute;
+	right: 24px;
+	bottom: 0;
+}
+
+
+footer li{
+	float: left;
+	margin-right: 24px;
+}
+
+.top{
 	right: 0;
 	font-size: 14px;
 	top: 0;
@@ -1062,10 +1074,10 @@ footer p{
 	color: white;
 	text-transform: uppercase;
 	display: block;
-	width: 120px;
-	padding: 18px 0;
+	padding: 18px 36px;
 	text-align: center;
 	background: #191919;
+	letter-spacing: 3px;
 
 	-webkit-transition: all .2s ease-out;
 }
@@ -1082,7 +1094,7 @@ footer p{
 	height: 500px;
 	opacity: .1;
 	position: absolute;
-	top: 6360px;
+	top: 6290px;
 }
 
 /************ CONCLUSION ************/
