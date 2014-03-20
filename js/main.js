@@ -233,25 +233,42 @@ var tnyc = tuk = 0;
 
       //age des conucteurs
 
-      var i = 0;
-      setInterval(function()
-      {
-            if($("#agenyc").attr("y")- i>54)
-            {
-                $("#agenyc").attr("y",$("#agenyc").attr("y")- i);
-                i+=0.1;
-            }
-      },33);
+var content7Animated = false;
 
-      var e = 0;
-      setInterval(function()
-      {
-            if($("#ageuk").attr("y")- e>65)
-            {
-                $("#ageuk").attr("y",$("#ageuk").attr("y")- e);
-                e+=0.1;
-            }
-      },33);
+$('.content_7').waypoint({
+  handler: function(direction) {
+    if ( content7Animated == false ) {
+      var i = 0, iid;
+        iid = setInterval(function()
+        {
+              if($("#agenyc").attr("y")- i>54)
+              {
+                  $("#agenyc").attr("y",$("#agenyc").attr("y")- i);
+                  i+=0.1;
+              } else {
+                clearInterval(iid);
+              }
+        },33);
+
+        var e = 0, eid;
+        eid = setInterval(function()
+        {
+              if($("#ageuk").attr("y")- e>65)
+              {
+                  $("#ageuk").attr("y",$("#ageuk").attr("y")- e);
+                  e+=0.1;
+              } else {
+                clearInterval(eid);
+              }
+        },33);
+
+        content7Animated = true;
+    }
+    
+  },
+  offset: '50%'
+});
+      
 
 $('.content_1').waypoint({
   handler: function(direction) {
