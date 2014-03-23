@@ -1,0 +1,28 @@
+.sp_7 {
+	height: 684px;
+	left: 50%;
+	top: 90px;
+}
+.sp_8 {
+	height: 344px;
+	left: 50%;
+	top: 90px;
+}
+.sp_9 {
+	height: 174px;
+	left: 50%;
+	top: 1880px;
+}
+
+
+.money {
+	margin-top: 40px;
+	position: relative;
+	left: 200px;
+}
+.taxes {
+	font-weight: bold;
+font-size: 72px;
+text-align: center;
+padding: 16px 0;
+}

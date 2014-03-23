@@ -280,7 +280,7 @@ $('.content_7').waypoint({
               pmnycstop = setTimeout("augmenterprixmnyc()", 40); 
          } 
       } 
-      var pmnycstop = setTimeout("augmenterprixmnyc()", 1);
+      //var pmnycstop = setTimeout("augmenterprixmnyc()", 1);
 
 
       function augmenterprixmuk(){ 
@@ -291,7 +291,7 @@ $('.content_7').waypoint({
               pmukstop = setTimeout("augmenterprixmuk()", 100); 
          } 
       } 
-      var pmukstop = setTimeout("augmenterprixmuk()", 1);
+      //var pmukstop = setTimeout("augmenterprixmuk()", 1);
 
 
   /*prix moyen en euro*/
@@ -304,7 +304,7 @@ $('.content_7').waypoint({
               pmnycestop = setTimeout("augmenterprixmnyce()", 24); 
          } 
       } 
-      var pmnycestop = setTimeout("augmenterprixmnyce()", 1);
+      //var pmnycestop = setTimeout("augmenterprixmnyce()", 1);
 
 
       function augmenterprixmuke(){ 
@@ -315,7 +315,17 @@ $('.content_7').waypoint({
               pmukestop = setTimeout("augmenterprixmuke()", 6); 
          } 
       } 
-      var pmukestop = setTimeout("augmenterprixmuke()", 1);
+      //var pmukestop = setTimeout("augmenterprixmuke()", 1);
+
+$('.content_3').waypoint({
+  handler: function(direction) {
+    augmenterprixmnyce();
+    augmenterprixmuke();
+    augmenterprixmnyc();
+    augmenterprixmuk();
+  },
+  offset: '50%'
+});
 
 $('.content_1').waypoint({
   handler: function(direction) {

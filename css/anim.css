@@ -97,3 +97,13 @@
     opacity: 1;
   }
 }
+
+@-webkit-keyframes Dolars {
+    0%{width: 0px;}
+    100%{width: 215px;}
+}
+
+@-webkit-keyframes Livres {
+    0%{width: 0px;}
+    60%{width: 433px;}
+    100%{width: 433px;}

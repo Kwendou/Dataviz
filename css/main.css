@@ -122,7 +122,7 @@ header .question{
 	display: block;
 	width: 100%;
 	text-align: center;
-
+	font-weight: bold;
 	text-shadow: none;
 
 	position: relative;
@@ -572,12 +572,10 @@ h4{
     height: 72px;
     display: inline-block;
     margin-left: 30px;
-    -webkit-animation: Dolars 2s forwards;
 }
 
-@-webkit-keyframes Dolars {
-    0%{width: 0px;}
-    100%{width: 215px;}
+.dolar .img_dolar .dolar_active{
+	 -webkit-animation: Dolars 2s forwards;
 }
 
 .pmnyc {
@@ -1018,7 +1016,7 @@ footer li{
 	height: 500px;
 	opacity: .1;
 	position: absolute;
-	top: 6360px;
+	top: 6490px;
 }
 
 .layout_making{
@@ -1069,7 +1067,7 @@ footer li{
 .credit .perso li{
 	width: 20%;
 	height: 200px;
-	margin-left: 3%;
+	margin-left: 3.04%;
 	float: left;
 	border-radius: 50%;
 	border: 10px solid black;
@@ -1254,8 +1252,8 @@ h6{
 }
 
 .target_ny{
-	top: 520px;
-	left: 225px;
+	top: 620px;
+	left: 250px;
 }
 
 .targetlondon p,
@@ -1283,7 +1281,7 @@ h6{
 
 .on_ny{
 	left: 160px;
-	top: 590px;
+	top: 690px;
 	width: 150px;
 	padding: 10px 20px;
 	background: #e3d212;
@@ -1328,6 +1326,76 @@ h6{
 }
 
 /************ TARGET ************/
+
+/************ BONUS *************/
+
+.sp_7 {
+	height: 684px;
+	left: 50%;
+	top: 90px;
+}
+.sp_8 {
+	height: 344px;
+	left: 50%;
+	top: 90px;
+}
+.sp_9 {
+	height: 174px;
+	left: 50%;
+	top: 1880px;
+}
+
+
+.money {
+	margin-top: 40px;
+	position: relative;
+	left: 200px;
+}
+.taxes {
+	font-weight: bold;
+font-size: 72px;
+text-align: center;
+padding: 16px 0;
+}
+
+.conclusion .text_bonus{
+	font-size: 16px;
+}
+
+.bonus{
+	font-size: 16px;
+	background: black;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;;
+	opacity: .5;
+	position: relative;
+	left: 155px;
+
+	-webkit-tansition: all .2s ease-out;
+}
+
+.bonus:hover{
+	opacity: 1;
+}
+
+.dataviz_back{
+	left: 42%;
+	margin: 0 auto;
+	margin-top: 72px;
+}
+
+/************ BONUS *************/
+.age_annot{
+	display: block;
+	width: 100%;
+	font-size: 48px;
+	text-align: center;
+	margin-left: 180px;
+	position: absolute;
+	top: 440px;
+}
 
 /************ CLEARFIX ************/
 
